@@ -1,0 +1,255 @@
+/* General Styles */
+html{
+    height: 100%;
+}
+body {
+
+    margin: 0;
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: slnt 0;
+}
+
+/* Main Container Styles */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: -30px;
+    height: 100%;
+}
+
+/* Parent Container Styles */
+.parent {
+    margin: 90px;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    height: 480px ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+/* Navigation Styles */
+.nav {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    top: 0;
+    height: 80px;
+    position: relative;
+}
+
+.rnav {
+    width: 50%;
+    position: absolute;
+}
+
+.nav li {
+    width: 100px;
+    height: 40px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 50%;
+    position: absolute;
+}
+
+.nav ul li:hover {
+    font-size: larger;
+    color: hsl(277, 64%, 61%);
+    transition: 0.4s;
+}
+
+/* Additional Styles */
+.word {
+    color: hsl(277, 64%, 61%);
+}
+
+.par {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 20%;
+}
+
+.blur {
+    color: gray;
+}
+
+.text {
+    width: 50%;
+    padding: 30px;
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    border-radius: 10px 0px 0px 10%;
+
+}
+
+.img {
+    display: block;
+    background-image: url('./images/image-header-desktop.jpg');
+    border-radius: 0 10px 10px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+}
+
+.cover {
+    background-color: hsla(277, 100%, 25%, 0.584);
+    border-radius: 0 10px 10px 0;
+    width:100%;
+    height: 100%;
+}
+
+/* Footer Styles */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 6px;
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* Link Styles */
+a {
+    color: hsl(277, 64%, 61%);
+    text-decoration: none;
+}
+
+/* Responsive Styles for Small Screens */
+@media screen and (max-width: 780px) {
+    html{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body {
+        margin: 0;
+        background-color: hsl(233, 47%, 7%);
+        color: hsl(0, 0%, 100%);
+        height: 100%;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+        font-variation-settings: slnt 0;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .nav{
+        display: none;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        height: 100%;
+    }
+    .parent {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        background-color: hsl(244, 38%, 16%);
+        border-radius: 10px;
+        height: 73%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+   
+    .word {
+        color: hsl(277, 64%, 61%);
+    }
+
+    .par {
+        margin: 3px auto;
+        display: block;
+        height: 30px;
+        padding: 10px;
+        font-size: x-small;
+
+    }
+    .discover{
+        font-size: x-small;
+    }
+    .blur {
+        color: gray;
+    }
+
+    .text {
+        width: 80%;
+        padding: 30px;
+        background-color: hsl(244, 38%, 16%);
+        color: white;
+        border-radius: 10px 10px 10px 10px;
+        height: 60%;
+    }
+
+    .img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-image: url('./images/image-header-desktop.jpg');
+        border-radius: 10px 10px 0px 0px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 40%;
+    }
+
+    .cover {
+        background-color: hsla(277, 100%, 25%, 0.584);
+        border-radius: 10px 10px 0px 0px;
+        width:100%;
+        height: 100%;
+    }
+
+    .attribution {
+        position: relative;
+        display: flex;
+        bottom: 0;
+        width: 100%;
+        padding: 6px;
+        background-color: hsl(233, 47%, 7%);
+        color: hsl(0, 0%, 100%);
+        justify-content: center;
+        font-size: 0.4rem;
+        margin: 0 auto;
+    }
+
+    a {
+        color: hsl(277, 64%, 61%);
+        text-decoration: none;
+    }
+}
